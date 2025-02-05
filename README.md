@@ -19,16 +19,32 @@
    ```
 3. Membuat Database Baru dengan nama database "qrcode"  
    ![Daftar Tabel: ](screenshot/table.png)
-4. Copy file `.env.example` menjadi `.env` dan atur konfigurasi database.  
-5. Generate app key:  
-   ```
-   php artisan key:generate
-   ```
-6. Jalankan migrasi database:  
+4. Mengubah Nama Database Pada File `.env` dan sesuai dengan nama Database yang      telah dibuat.  
+5. Jalankan Migrasi Database:   
    ```
    php artisan migrate
    ```
-7. Jalankan server lokal:  
+   ![Tabel QR Code (menyimpan data URL): ](screenshot/url_qr_code.png)
+   ![Tabel User (menyimpan data user berupa email & password): ](screenshot/user_tabel.png)
+6. Membuat model Laravel bernama QrCode beserta file migrasi database-nya:  
    ```
-   php artisan serve
+   php artisan make:model QrCode -m
    ```
+7. Menginstall Library QR Code untuk Laravel:
+   ```
+   composer require simplesoftwareio/simple-qrcode
+   ```
+8. Jalankan Migrasi Database-nya lagi:  
+   ```
+   php artisan migrate
+   ```
+9. Menginstal Laravel Breeze sebagai paket autentikasi di Laravel:
+   ```
+   composer require laravel/breeze --dev
+   ```
+10. Jalankan Aplikasi:
+    ```
+    php artisan serve
+    ```
+11. Membuat file QrCodeController didalam folder app/Http/Controller:
+    <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
