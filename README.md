@@ -51,9 +51,9 @@
 13. Tampilan Hasil :
     - Setelah Berhasil Login/Register, User akan diarahkan ke halaman Dashboard: 
     ![Setelah Berhasil Login/Register, User akan diarahkan ke halaman Dashboard](screenshot/dash.png)
-    = Tampilan Halaman Create QR Code :
+    - Tampilan Halaman Create QR Code :
     ![Tampilan Halaman Create QR Code :](screenshot/hasil.png)
-    = Tampilan Hasil Create QR Code setelah User memasukkan URL dokumen yang kemudian akan di implementasikan menjadi sebuah QR Code: 
+    - Tampilan Hasil Create QR Code setelah User memasukkan URL dokumen yang kemudian akan di implementasikan menjadi sebuah QR Code: 
     ![Tampilan Hasil Create QR Code setelah User memasukkan URL dokumen yang kemudian akan di implementasikan menjadi sebuah QR Code](screenshot/create_qr.png)
     - QR Code akan tersimpan di folder storage/app/public/qr_codes : 
     ![QR Code akan tersimpan di folder storage/app/public/qr_codes : ](screenshot/tersimpan.png)
