@@ -25,7 +25,7 @@
    php artisan migrate
    ```
    ![Tabel QR Code (menyimpan data URL): ](screenshot/url_qr_code.png)
-   ![Tabel User (menyimpan data user berupa email & password): ](screenshot/user_tabel.png)
+   ![Tabel User (menyimpan data user berupa email & password): ](screenshot/user_table.png)
 6. Membuat model Laravel bernama QrCode beserta file migrasi database-nya:  
    ```
    php artisan make:model QrCode -m
@@ -49,7 +49,11 @@
 11. Membuat file QrCodeController didalam folder app/Http/Controller.
 12. Menambahkan `Route` pada file routes/web.php.
 13. Tampilan Hasil :
+    - Setelah Berhasil Login/Register, User akan diarahkan ke halaman Dashboard: 
     ![Setelah Berhasil Login/Register, User akan diarahkan ke halaman Dashboard](screenshot/dash.png)
+    = Tampilan Halaman Create QR Code :
     ![Tampilan Halaman Create QR Code :](screenshot/create_qr.png)
+    = Tampilan Hasil Create QR Code setelah User memasukkan URL dokumen yang kemudian akan di implementasikan menjadi sebuah QR Code: 
     ![Tampilan Hasil Create QR Code setelah User memasukkan URL dokumen yang kemudian akan di implementasikan menjadi sebuah QR Code](screenshot/hasil.png)
+    - QR Code akan tersimpan di folder storage/app/public/qr_codes : 
     ![QR Code akan tersimpan di folder storage/app/public/qr_codes : ](screenshot/tersimpan.png)
